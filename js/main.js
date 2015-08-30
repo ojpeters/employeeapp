@@ -20,6 +20,7 @@ var app = {
 		}
 	},
     initialize: function() {
+		var self = this;
         this.store = new WebSqlStore(
 			function() {        
 				self.showAlert('DBStore Initialized', 'Info');    
